@@ -1,10 +1,20 @@
 import json
 
+from high_score_board import ScoreBoard
+
+scoreboard = ScoreBoard(players={})
+
+def ask_name():
+    name=input("Name:")
+    if name not in scoreboard.get_players():
+        scoreboard.add_player(name)
+    return name
+
 def load_questions(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         return json.load(file)
 
-def ask_questions(questions):
+def ask_questions(questions, name):
     score = 0
     total_questions = len(questions)
     
@@ -28,13 +38,18 @@ def ask_questions(questions):
         else:
             print(f"Väärin! Oikea vastaus on: {correct_answer}.")
     
+    scoreboard.save_results(name, score)
+    
     print(f"\nPeli päättyi! Sait {score} / {total_questions} oikeaa vastausta.")
+    print("\nTulostaulu:")
+    print(scoreboard.get_scoreboard())
 
 # Pääohjelma
 def main():
     questions_file = "questions.json" 
     questions = load_questions(questions_file)
-    ask_questions(questions)
+    name=ask_name()
+    ask_questions(questions, name)
 
 if __name__ == "__main__":
     main()
