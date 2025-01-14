@@ -1,0 +1,22 @@
+[
+    {
+      "question": "Mikä on Suomen pääkaupunki?",
+      "options": ["a) Helsinki", "b) Turku", "c) Tampere", "d) Oulu"],
+      "answer": "a"
+    },
+    {
+      "question": "Mikä on Euroopan pisin joki?",
+      "options": ["a) Tonava", "b) Volga", "c) Rein", "d) Seine"],
+      "answer": "b"
+    },
+    {
+      "question": "Kuka on kirjoittanut Kalevalan?",
+      "options": ["a) Aleksis Kivi", "b) Eino Leino", "c) Elias Lönnrot", "d) Juhani Aho"],
+      "answer": "c"
+    },
+    {
+      "question": "Mikä on Suomen kansalliskukka?",
+      "options": ["a) Kielo", "b) Sinivuokko", "c) Orvokki", "d) Metsätähti"],
+      "answer": "a"
+    }
+  ]
