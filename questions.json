@@ -18,5 +18,65 @@
       "question": "Mikä on Suomen kansalliskukka?",
       "options": ["a) Kielo", "b) Sinivuokko", "c) Orvokki", "d) Metsätähti"],
       "answer": "a"
+    },
+    {
+      "question": "Kuka oli Suomen ensimmäinen presidentti?",
+      "options": [
+            "a) Kyösti Kallio",
+            "b) P. E. Svinhufvud",
+            "c) K. J. Ståhlberg",
+            "d) Risto Ryti"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "Mikä on Suomen kansalliseläin?",
+      "options": [
+            "a) Karhu",
+            "b) Ahma",
+            "c) Hirvi",
+            "d) Susi"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "Milloin Suomi järjesti kesäolympialaiset?",
+      "options": [
+            "a) 1944",
+            "b) 1948",
+            "c) 1952",
+            "d) 1958"
+      ],
+      "answer": "c"
+    },
+    {
+      "question": "Mikä on Suomen korkein kohta?",
+      "options": [
+            "a) Halti",
+            "b) Yllästunturi",
+            "c) Saana",
+            "d) Levi"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "Kuinka monta maata kuuluu EU:hun? (vuonna 2024)",
+      "options": [
+            "a) 25",
+            "b) 27",
+            "c) 30",
+            "d) 32"
+      ],
+      "answer": "b"
+    },
+    {
+      "question": "Kuinka monta maata kuuluu Natoon? (vuonna 2024)",
+      "options": [
+            "a) 28",
+            "b) 30",
+            "c) 32",
+            "d) 34"
+      ],
+      "answer": "c"
     }
   ]
