@@ -1,2 +1,7 @@
 pekka;8
 leija;9
+mimmi;5
+jippu;10
+elias;11
+leevi;9
+kuurna;1

@@ -2,12 +2,20 @@ import json
 
 from high_score_board import ScoreBoard
 
-scoreboard = ScoreBoard(players={})
+scoreboard = ScoreBoard()
+scoreboard.read_file()
 
 def ask_name():
-    name=input("Name:")
-    if name not in scoreboard.get_players():
-        scoreboard.add_player(name)
+    players=scoreboard.get_players()
+
+    while True:
+        name=input("Name: ")
+   
+        if name not in players:
+            scoreboard.add_player(name)
+            break
+        else:
+            print("Nimi on jo käytössä. Yritä uudelleen.")
     return name
 
 def load_questions(filename):
@@ -41,8 +49,6 @@ def ask_questions(questions, name):
     scoreboard.save_results(name, score)
     
     print(f"\nPeli päättyi! Sait {score} / {total_questions} oikeaa vastausta.")
-    print("\nTulostaulu:")
-    print(scoreboard.get_scoreboard())
 
 # Pääohjelma
 def main():
@@ -50,6 +56,8 @@ def main():
     questions = load_questions(questions_file)
     name=ask_name()
     ask_questions(questions, name)
+    print("\nTulostaulu:")
+    print(scoreboard.get_scoreboard())
 
 if __name__ == "__main__":
     main()
